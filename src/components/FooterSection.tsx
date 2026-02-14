@@ -20,8 +20,8 @@ const FooterSection = () => {
           <div>
             <h4 className="text-xs tracking-[0.3em] uppercase text-primary font-body mb-4">Contact</h4>
             <div className="space-y-3">
-              <p className="flex items-center gap-2 text-sm text-muted-foreground font-body"><MapPin className="w-3 h-3 text-primary/60" /> 12 Rue de l'Élégance, Paris 75008</p>
-              <p className="flex items-center gap-2 text-sm text-muted-foreground font-body"><Phone className="w-3 h-3 text-primary/60" />+33 1 42 68 99 00</p>
+              <p className="flex items-center gap-2 text-sm text-muted-foreground font-body"><MapPin className="w-3 h-3 text-primary/60" /> 12 Marine Drive, Mumbai 400020</p>
+              <p className="flex items-center gap-2 text-sm text-muted-foreground font-body"><Phone className="w-3 h-3 text-primary/60" />+91 123456789</p>
               <p className="flex items-center gap-2 text-sm text-muted-foreground font-body"><Mail className="w-3 h-3 text-primary/60" />reservations@suvarna-rasoi.com</p>
             </div>
           </div>
