@@ -2,15 +2,19 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import { X } from "lucide-react";
 import heroImage from "@/assets/hero-dish.jpg";
+import heroImage2 from "@/assets/hero-dish (2).jpg";
 import interiorImage from "@/assets/restaurant-interior.jpg";
 import chefImage from "@/assets/chef-portrait.jpg";
+import spicesImage from "@/assets/spices-display.jpg";
+import tandoorImage from "@/assets/tandoor-cooking.jpg";
 
 const images = [
-  { src: heroImage, alt: "Signature dish", span: "md:col-span-2 md:row-span-2" },
-  { src: interiorImage, alt: "Dining room", span: "" },
+  { src: heroImage, alt: "Signature Indian dish", span: "md:col-span-2 md:row-span-2" },
+  { src: spicesImage, alt: "Indian spices display", span: "" },
+  { src: tandoorImage, alt: "Tandoor cooking", span: "" },
+  { src: interiorImage, alt: "Dining room", span: "md:col-span-2" },
+  { src: heroImage2, alt: "Exquisite plating", span: "" },
   { src: chefImage, alt: "Chef at work", span: "" },
-  { src: interiorImage, alt: "Bar area", span: "md:col-span-2" },
-  { src: heroImage, alt: "Plating", span: "" },
 ];
 
 const GallerySection = () => {

@@ -1,73 +1,152 @@
-# Welcome to your Lovable project
+# Suvarna Rasoi 🍽️
 
-## Project info
+A modern, elegant website for a premium Indian fine dining restaurant, built with React and TypeScript.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## About
 
-## How can I edit this code?
+Suvarna Rasoi (meaning "Golden Kitchen" in Hindi) is a web application showcasing the luxury dining experience of a high-end Indian restaurant. The site features smooth animations, interactive elements, and a carefully designed interface that reflects the sophistication of fine dining.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- 🎨 **Modern UI/UX** - Clean, responsive design with smooth animations
+- 🍷 **Interactive Beverage Gallery** - Browse curated Indian beverages and premium spirits with filtering options
+- 📖 **Tasting Menu** - Detailed course presentations with spotlight hover effects
+- 👨‍🍳 **Chef's Profile** - Dedicated section for the executive chef's story and achievements
+- 🎉 **Private Events** - Inquiry form for special occasions and private dining
+- 📰 **Culinary Journal** - Blog section featuring stories about Indian cuisine and heritage
+- 📸 **Photo Gallery** - Visual showcase of dishes and restaurant ambiance
+- 📞 **Contact & Reservations** - Easy-to-use booking system
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+**Frontend:**
+- React 18 with TypeScript
+- Vite for blazing-fast development
+- Tailwind CSS for styling
+- Framer Motion for animations
 
-**Use your preferred IDE**
+**UI Components:**
+- shadcn/ui component library
+- Radix UI primitives
+- Lucide icons
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Form & Data Management:**
+- React Hook Form
+- TanStack Query
+- Zod validation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Make sure you have Node.js (v16+) and npm installed on your machine.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd suvarna-rasoi
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The site will open at `http://localhost:8081`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts
 
-**Use GitHub Codespaces**
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Check code quality |
+| `npm run test` | Run tests |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+suvarna-rasoi/
+├── src/
+│   ├── components/          # React components
+│   │   ├── Navigation.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── TastingMenu.tsx
+│   │   ├── ChefSpotlight.tsx
+│   │   ├── WineCellar.tsx
+│   │   ├── PrivateDining.tsx
+│   │   ├── JournalSection.tsx
+│   │   ├── FooterSection.tsx
+│   │   └── ui/              # Reusable UI components
+│   ├── pages/               # Page components
+│   ├── assets/              # Images and media
+│   ├── lib/                 # Utilities and helpers
+│   ├── App.tsx              # Main app component
+│   └── index.css            # Global styles
+├── public/                  # Static assets
+└── package.json
+```
 
-This project is built with:
+## Design Philosophy
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The design focuses on creating a premium, luxurious feel through:
 
-## How can I deploy this project?
+- **Golden Accents** - Warm gold gradients and highlights throughout
+- **Dark Theme** - Sophisticated dark backgrounds with high contrast
+- **Smooth Animations** - Subtle micro-interactions that enhance UX
+- **Glassmorphism** - Modern frosted glass effects
+- **Typography** - Elegant font pairings for readability and style
+- **Responsive** - Mobile-first design that works on all devices
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Key Highlights
 
-## Can I connect a custom domain to my Lovable project?
+### Interactive Tasting Menu
+Each course card features a spotlight effect on hover, creating an engaging browsing experience.
 
-Yes, you can!
+### Beverage Collection
+Filter drinks by region (North India, South India, Pan-India) and type (Traditional, Fusion, Premium Spirits).
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Event Inquiry System
+Elegant form with validation for private dining and special event bookings.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Browser Compatibility
+
+Tested and optimized for:
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+
+## Development Notes
+
+- Uses Vite for fast HMR (Hot Module Replacement)
+- TypeScript for type safety
+- ESLint configured for code quality
+- Component-based architecture for maintainability
+
+## Future Enhancements
+
+- [ ] Online reservation system integration
+- [ ] Multi-language support (Hindi, English)
+- [ ] Customer reviews section
+- [ ] Menu PDF download
+- [ ] Instagram feed integration
+
+## License
+
+© 2025 Suvarna Rasoi. All rights reserved.
+
+## Contact
+
+For inquiries about the restaurant or this project, please use the contact form on the website.
+
+---
+
+Built with ❤️ for lovers of fine Indian cuisine

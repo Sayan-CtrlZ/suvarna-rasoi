@@ -32,14 +32,18 @@ const PrivateDining = () => {
             />
             <div className="grid grid-cols-3 gap-4 text-center">
               {[
-                { label: "The Noir Suite", cap: "Up to 12 guests" },
-                { label: "The Gold Room", cap: "Up to 24 guests" },
+                { label: "The Maharaja Suite", cap: "Up to 12 guests" },
+                { label: "The Rajwada Hall", cap: "Up to 24 guests" },
                 { label: "Full Venue", cap: "Up to 60 guests" },
               ].map((room, i) => (
-                <div key={i} className="glass-panel rounded-xl p-4">
-                  <h4 className="font-display text-xs tracking-[0.2em] text-primary mb-1">{room.label}</h4>
+                <motion.div
+                  key={i}
+                  whileHover={{ y: -6, scale: 1.05 }}
+                  className="glass-panel rounded-xl p-4 cursor-pointer transition-all duration-300 hover:shadow-[0_10px_30px_rgba(212,175,55,0.2)] hover:border-primary/30"
+                >
+                  <h4 className="font-display text-xs tracking-[0.2em] text-primary mb-1 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(212,175,55,0.5)]">{room.label}</h4>
                   <p className="text-xs text-muted-foreground font-body">{room.cap}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>
@@ -64,7 +68,7 @@ const PrivateDining = () => {
                       type={field.type}
                       value={formData[field.key as keyof typeof formData]}
                       onChange={e => setFormData(prev => ({ ...prev, [field.key]: e.target.value }))}
-                      className="w-full bg-background/50 border border-border/50 rounded-xl px-4 py-3 text-foreground font-body text-sm focus:border-primary/50 focus:outline-none transition-colors"
+                      className="w-full bg-background/50 border border-border/50 rounded-xl px-4 py-3 text-foreground font-body text-sm focus:border-primary/50 focus:outline-none focus:shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:border-border/80 transition-all duration-300"
                     />
                   </div>
                 ))}
@@ -74,11 +78,11 @@ const PrivateDining = () => {
                     value={formData.message}
                     onChange={e => setFormData(prev => ({ ...prev, message: e.target.value }))}
                     rows={3}
-                    className="w-full bg-background/50 border border-border/50 rounded-xl px-4 py-3 text-foreground font-body text-sm focus:border-primary/50 focus:outline-none transition-colors resize-none"
+                    className="w-full bg-background/50 border border-border/50 rounded-xl px-4 py-3 text-foreground font-body text-sm focus:border-primary/50 focus:outline-none focus:shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:border-border/80 transition-all duration-300 resize-none"
                   />
                 </div>
-                <button className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-primary/10 border border-primary/40 rounded-xl text-primary font-body text-sm tracking-[0.2em] uppercase hover-gold-glow hover:bg-primary/20 transition-all">
-                  <Send className="w-4 h-4" /> Send Inquiry
+                <button className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-primary/10 border border-primary/40 rounded-xl text-primary font-body text-sm tracking-[0.2em] uppercase hover-gold-glow hover:bg-primary/20 hover:scale-[1.02] hover:shadow-[0_10px_40px_rgba(212,175,55,0.4)] transition-all duration-300 group">
+                  <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" /> Send Inquiry
                 </button>
               </form>
             </div>
