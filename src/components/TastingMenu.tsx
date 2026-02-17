@@ -71,10 +71,10 @@ const CourseItem = ({ course, index }: { course: typeof courses[0], index: numbe
       transition={{ duration: 0.6, delay: index * 0.1 }}
       onMouseEnter={() => setHoveredIdx(true)}
       onMouseLeave={() => setHoveredIdx(false)}
-      className="group relative min-h-[200px]"
+      className="group relative min-h-[200px] flex flex-col"
     >
       <div className="gold-separator" />
-      <div className="relative py-8 px-4 md:px-8 rounded-2xl transition-all duration-500 hover:bg-primary/5 hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:border hover:border-primary/30 hover:scale-[1.02]">
+      <div className="relative py-8 px-4 md:px-8 rounded-2xl transition-all duration-500 hover:bg-primary/5 hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:border hover:border-primary/30 hover:scale-[1.02] flex-1">
         <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
           <div className="flex-1">
             <p className="text-xs tracking-[0.3em] uppercase text-primary/60 font-body mb-2">{course.course}</p>

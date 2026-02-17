@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={interiorImage} alt="Suvarna Rasoi dining room" className="w-full h-full object-cover opacity-30" />
+        <img src={interiorImage} alt="Suvarna Rasoi dining room" className="w-full h-full object-cover opacity-80 brightness-125" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60" />
       </div>

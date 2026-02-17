@@ -3,8 +3,7 @@ import { Flame, TreePine } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const modes = [
-  { id: "default", label: "Classic", icon: null },
-  { id: "candlelight", label: "Candlelight", icon: Flame },
+  { id: "default", label: "Candlelight", icon: Flame },
   { id: "emerald-night", label: "Emerald Night", icon: TreePine },
 ] as const;
 
@@ -33,9 +32,8 @@ const AmbientToggle = () => {
               <button
                 key={m.id}
                 onClick={() => applyMode(m.id)}
-                className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-body tracking-wider transition-all ${
-                  mode === m.id ? "bg-primary/10 text-primary" : "text-muted-foreground hover:text-foreground"
-                }`}
+                className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-body tracking-wider transition-all ${mode === m.id ? "bg-primary/10 text-primary" : "text-muted-foreground hover:text-foreground"
+                  }`}
               >
                 {m.icon && <m.icon className="w-3 h-3" />}
                 {m.label}

@@ -38,7 +38,7 @@ const ChefSpotlight = () => {
               className="w-full aspect-[3/4] object-cover rounded-2xl cinematic-shadow transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-[0_30px_80px_-20px_rgba(212,175,55,0.4)]"
             />
             <div className="absolute inset-0 rounded-2xl border border-primary/10 group-hover:border-primary/30 transition-colors duration-500" />
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-primary/20 rounded-2xl group-hover:border-primary/40 transition-all duration-500 group-hover:w-28 group-hover:h-28" />
+
           </motion.div>
 
           <motion.div

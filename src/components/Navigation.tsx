@@ -42,12 +42,12 @@ const Navigation = () => {
           : "bg-transparent"
           }`}
       >
-        <div className="max-w-7xl mx-auto px-3 md:px-4 py-3 flex items-center justify-between">
-          <button onClick={() => scrollTo("home")} className="font-display text-lg md:text-xl tracking-[0.3em] gold-gradient-text">
+        <div className="w-full py-3 flex items-center justify-between">
+          <button onClick={() => scrollTo("home")} className="font-display text-lg md:text-xl tracking-[0.3em] gold-gradient-text pl-4">
             SUVARNA RASOI
           </button>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center justify-evenly flex-1 px-4">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -62,7 +62,7 @@ const Navigation = () => {
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden text-foreground"
+            className="lg:hidden text-foreground pr-4"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
